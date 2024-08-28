@@ -71,11 +71,13 @@ export function Navbar() {
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
+        <h1 className="font-bold relative left-10 text-blue-600 text-xl md:hidden">IDEA</h1>
         <SheetContent side="left">
           <nav className="grid gap-6 text-lg font-medium">
             <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
-              <Package2 className="h-6 w-6" />
-              <span className="sr-only">Acme Inc</span>
+              {/* <Package2 className="h-6 w-6" /> */}
+              <h1 className="font-bold text-blue-600 text-xl">IDEA</h1>
+              <span className="sr-only">Idea Nebbi</span>
             </Link>
             <Link href="#" className="text-muted-foreground hover:text-foreground">
               Home
@@ -83,18 +85,29 @@ export function Navbar() {
             <Accordion type="single" collapsible>
               <AccordionItem value="item-1">
                 <AccordionTrigger>Thematic Areas</AccordionTrigger>
-                <AccordionContent>Climatic Justice</AccordionContent>
+                <AccordionContent>
+                  <a href="/thematic-areas/health">Health</a>
+                </AccordionContent>
+                <AccordionContent>
+                  <a href="/thematic-areas/youth">Youth livelihood</a>
+                </AccordionContent>
+                <AccordionContent>
+                  <a href="/thematic-areas/civic">Civic Accountability</a>
+                </AccordionContent>
+                <AccordionContent>
+                  <a href="/thematic-areas/climate">Climatic Justice</a>
+                </AccordionContent>
               </AccordionItem>
             </Accordion>
 
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              Products
+            <Link href="/events" className="text-muted-foreground hover:text-foreground">
+              Events
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
-              Customers
+            <Link href="/about" className="text-muted-foreground hover:text-foreground">
+              About Us
             </Link>
-            <Link href="#" className="hover:text-foreground">
-              Settings
+            <Link href="/contact" className="hover:text-foreground">
+              Contact Us
             </Link>
           </nav>
         </SheetContent>
