@@ -35,7 +35,9 @@ export function Navbar() {
       <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
         <Link href="#" className="flex items-center gap-2 text-lg font-semibold md:text-base">
           {/* <Package2 className="h-6 w-6" /> */}
-          <h1 className="font-bold  text-blue-600 text-xl">IDEA</h1>
+          <h1 className="font-bold  text-blue-600 text-xl">
+            <a href="/">IDEA</a>
+          </h1>
           <span className="sr-only">Idea Nebi</span>
         </Link>
         <Link href="/" className="text-muted-foreground transition-colors hover:text-foreground">
@@ -71,15 +73,19 @@ export function Navbar() {
             <span className="sr-only">Toggle navigation menu</span>
           </Button>
         </SheetTrigger>
-        <h1 className="font-bold relative left-10 text-blue-600 text-xl md:hidden">IDEA</h1>
+        <h1 className="font-bold relative left-10 text-blue-600 text-xl md:hidden">
+          <a href="/">IDEA</a>
+        </h1>
         <SheetContent side="left">
           <nav className="grid gap-6 text-lg font-medium">
             <Link href="#" className="flex items-center gap-2 text-lg font-semibold">
               {/* <Package2 className="h-6 w-6" /> */}
-              <h1 className="font-bold text-blue-600 text-xl">IDEA</h1>
+              <h1 className="font-bold text-blue-600 text-xl">
+                <a href="/">IDEA</a>{" "}
+              </h1>
               <span className="sr-only">Idea Nebbi</span>
             </Link>
-            <Link href="#" className="text-muted-foreground hover:text-foreground">
+            <Link href="/" className="text-muted-foreground hover:text-foreground">
               Home
             </Link>
             <Accordion type="single" collapsible>
